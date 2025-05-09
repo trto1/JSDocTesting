@@ -9,5 +9,5 @@ jobs: # the things being executed
       - name: Install Dependency
         run: npm install -g jsdoc
       - name: Making JS Docs
-        run: jsdoc -r ./src/
+        run: jsdoc -r .
 
