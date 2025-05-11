@@ -10,4 +10,4 @@ function printSomething (something, n) {
     }
 }
 
-printSomething ("tri", 2);
+printSomething ("dana", 2);
