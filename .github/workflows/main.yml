@@ -16,12 +16,8 @@ jobs: # the things being executed
         run: jsdoc -r .
 
       - name: Commit and Push Docs
-        run: jsdoc -r .
-
-      - name: Commit and Push Docs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "Update JS docs [skip ci]" || echo "No changes to commit"
+          git commit -am "Update JS docs"
           git push
